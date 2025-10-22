@@ -1,0 +1,12 @@
+@import 'tailwindcss';
+@plugin "@tailwindcss/typography";
+@plugin "daisyui"{
+    themes: all;
+}
+
+@layer components {
+    /* Optional: Shadow + border styling for all terminal windows */
+    .terminal-window { @apply rounded-lg shadow-lg border border-gray-700 flex flex-col overflow-hidden; }
+    .terminal-bar { @apply flex items-center justify-between px-3 py-1 bg-gray-800; }
+    .terminal-content { @apply p-3 text-sm bg-white/20 backdrop-blur-sm flex-1 overflow-auto text-gray-100 rounded-b-md; }
+}

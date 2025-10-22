@@ -1,0 +1,51 @@
+---
+title: "Linux Tiling Terminal Layout"
+layout: layouts/default.njk
+---
+
+{% if collections.about | length > 0 %}
+  {% set about_content = collections.about[0].templateContent %}
+{% else %}
+  {% set about_content = "" %}
+{% endif %}
+
+{% if collections.research | length > 0 %}
+  {% set research_content = collections.research[0].templateContent %}
+{% else %}
+  {% set research_content = "" %}
+{% endif %}
+
+{% if collections.teaching | length > 0 %}
+  {% set teaching_content = collections.teaching[0].templateContent %}
+{% else %}
+  {% set teaching_content = "" %}
+{% endif %}
+
+{% if collections.publications | length > 0 %}
+  {% set publications_content = collections.publications[0].templateContent %}
+{% else %}
+  {% set publications_content = "" %}
+{% endif %}
+
+{% if collections.recent_projects | length > 0 %}
+  {% set recent_projects_content = collections.recent_projects[0].templateContent %}
+{% else %}
+  {% set recent_projects_content = "" %}
+{% endif %}
+
+{% import "partials/terminal_window.njk" as win %}
+
+<!-- About : moitié gauche (~2/3) -->
+{{ win.terminal_window("About", about_content, "row-span-3 max-w-[100%]", "~/site/about") }}
+
+<!-- Recherche : en haut à droite -->
+{{ win.terminal_window("Recherche", research_content, "row-span-1", "~/site/research") }}
+
+<!-- Enseignement : milieu droite -->
+{{ win.terminal_window("Enseignement", teaching_content, "row-span-1", "~/site/teaching") }}
+
+<!-- Publications : bas droite -->
+{{ win.terminal_window("Publications", publications_content, "row-span-1", "~/site/publications") }}
+
+<!-- Projets récents / Autre : ligne 4, pleine largeur -->
+{{ win.terminal_window("Projets récents", recent_projects_content, "col-span-2 row-span-1", "~/site/projects") }}
