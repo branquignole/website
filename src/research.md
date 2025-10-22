@@ -2,8 +2,6 @@
 title : Research
 ---
 
-&gt; cat TOPICS
-
 # Topics
 
 Currently, my work follows two main directions: one focused on **privacy protection** (notably through Qiyang’s PhD thesis), and another on **intrusion and anomaly detection** — the more “traditional cybersecurity” line, connected to the IRIS team and IMT Atlantique’s research legacy.

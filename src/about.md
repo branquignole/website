@@ -8,7 +8,7 @@ layout: layouts/default.njk
 <div class="flex flex-col md:flex-row items-start gap-4 mt-2">
 
   <!-- Avatar DaisyUI -->
-  <div class="avatar">
+  <div class="avatar p-4">
     <div class="w-40 rounded-full ring ring-gray-700 ring-offset-base-100 ring-offset-2">
       <img src="/assets/id.jpg" alt="Profile"/>
     </div>
