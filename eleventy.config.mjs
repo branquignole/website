@@ -22,6 +22,7 @@ export default function (eleventyConfig) {
     fs.writeFileSync(tailwindOutputPath, result.css);
   });
     eleventyConfig.addPassthroughCopy("src/assets");
+    eleventyConfig.addPassthroughCopy("src/_data");
 
     eleventyConfig.addCollection("research", collection =>
         collection.getFilteredByGlob("./src/research.md")

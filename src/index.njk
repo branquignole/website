@@ -46,10 +46,11 @@ layout: layouts/default.njk
   <!-- Teaching en dessous de Research -->
   {{ win.terminal_window("Teaching", teaching_content, "min-h-[150px]", "~/site/teaching") }}
 
-  <!-- Publications en dessous de Teaching -->
-  {{ win.terminal_window("Publications", publications_content, "min-h-[150px]", "~/site/publications") }}
 
-  <!-- Projets récents en bas, prend toute la largeur -->
-  {{ win.terminal_window("Projets récents", recent_projects_content, "col-span-2 min-h-[200px]", "~/site/projects") }}
+  <!-- Projets récents en dessous de Teaching -->
+  {{ win.terminal_window("Projets récents", recent_projects_content, "min-h-[150px]", "~/site/projects") }}
+
+  <!-- Publications en bas, prend toute la largeur -->
+  {{ win.terminal_window("Publications", publications_content, "col-span-2 min-h-[200px]", "~/site/publications") }}
 
 </main>
