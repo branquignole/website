@@ -1,6 +1,5 @@
 {% macro terminal_window(title, content, classes="", path="~/site") %}
-<div class="terminal-window {{ classes }} flex flex-col rounded-lg shadow-lg overflow-hidden border border-gray-700">
-  <!-- Barre de titre -->
+<div class="terminal-window {{ classes }} flex flex-col rounded-lg shadow-lg overflow-visible border border-gray-700">
   <div class="terminal-bar flex items-center justify-between px-3 py-1 bg-gray-800">
     <span class="title text-sm font-semibold text-gray-100">{{ title }}</span>
     <div class="buttons flex gap-1">
@@ -10,22 +9,18 @@
     </div>
   </div>
 
-  <!-- Contenu -->
-  <div class="terminal-content p-3 text-sm bg-white/20 backdrop-blur-sm text-gray-100 flex-1 overflow-auto font-mono">
-
-    <!-- Prompt style Oh My Zsh -->
-    <div class="terminal-prompt flex items-center flex-wrap gap-1 mb-1">
+  <div class="terminal-content p-3 text-sm bg-black/40 backdrop-blur-sm text-gray-100 flex-1 font-mono overflow-visible">
+    <div class="terminal-prompt flex flex-wrap items-center gap-1 mb-1">
       <span class="text-cyan-400 font-semibold">user</span>
       <span class="text-gray-400">@</span>
       <span class="text-green-400 font-semibold">linux</span>
       <span class="text-gray-400">in</span>
       <span class="text-yellow-400 font-semibold">{{ path }}</span>
       <span class="text-gray-400">on</span>
-      <span class="text-purple-400 font-semibold">⎇ main</span>
+      <span class="text-purple-400 font-semibold">🌿 main</span>
       <span class="text-gray-500">❯</span>
       <span class="text-green-400 font-bold">➜</span>
     </div>
-
     {{ content | safe }}
   </div>
 </div>

@@ -10,3 +10,46 @@
     .terminal-bar { @apply flex items-center justify-between px-3 py-1 bg-gray-800; }
     .terminal-content { @apply p-3 text-sm bg-white/20 backdrop-blur-sm flex-1 overflow-auto text-gray-100 rounded-b-md; }
 }
+
+.terminal-content strong {
+    color: #22d3ee; /* cyan clair */
+}
+
+.terminal-content em {
+    color: var(--color-green-400);
+}
+
+.terminal-content a {
+    color: #8b5cf6; /* violet */
+    text-decoration: underline;
+}
+
+.terminal-content ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.terminal-content h1 {
+    font-family: monospace;      /* garde le monospace */
+    font-size: 1.75rem;          /* plus grand qu’un texte normal */
+    font-weight: bold;
+    color: #22d3ee;              /* cyan clair */
+    margin-bottom: 0.5rem;
+}
+
+.terminal-content h2 {
+    font-family: monospace;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #8b5cf6;              /* violet clair */
+
+    margin-bottom: 0.5rem;
+}
+
+.terminal-content h3 {
+    font-family: monospace;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #facc15;              /* jaune type FastFetch */
+    margin-bottom: 0.5rem;
+}

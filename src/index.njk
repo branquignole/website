@@ -1,7 +1,9 @@
 ---
-title: "Linux Tiling Terminal Layout"
+title: "Terminal Layout"
 layout: layouts/default.njk
 ---
+
+{% import "partials/terminal_window.njk" as win %}
 
 {% if collections.about | length > 0 %}
   {% set about_content = collections.about[0].templateContent %}
@@ -33,19 +35,21 @@ layout: layouts/default.njk
   {% set recent_projects_content = "" %}
 {% endif %}
 
-{% import "partials/terminal_window.njk" as win %}
+<main class="grid grid-cols-1 md:grid-cols-2 auto-rows-auto gap-2 w-screen min-h-screen p-2">
 
-<!-- About : moitié gauche (~2/3) -->
-{{ win.terminal_window("About", about_content, "row-span-3 max-w-[100%]", "~/site/about") }}
+  <!-- About à gauche (grand) -->
+  {{ win.terminal_window("About", about_content, "md:row-span-3 min-h-[200px]", "~/site/about") }}
 
-<!-- Recherche : en haut à droite -->
-{{ win.terminal_window("Recherche", research_content, "row-span-1", "~/site/research") }}
+  <!-- Research en haut à droite -->
+  {{ win.terminal_window("Research", research_content, "min-h-[150px]", "~/site/research") }}
 
-<!-- Enseignement : milieu droite -->
-{{ win.terminal_window("Enseignement", teaching_content, "row-span-1", "~/site/teaching") }}
+  <!-- Teaching en dessous de Research -->
+  {{ win.terminal_window("Teaching", teaching_content, "min-h-[150px]", "~/site/teaching") }}
 
-<!-- Publications : bas droite -->
-{{ win.terminal_window("Publications", publications_content, "row-span-1", "~/site/publications") }}
+  <!-- Publications en dessous de Teaching -->
+  {{ win.terminal_window("Publications", publications_content, "min-h-[150px]", "~/site/publications") }}
 
-<!-- Projets récents / Autre : ligne 4, pleine largeur -->
-{{ win.terminal_window("Projets récents", recent_projects_content, "col-span-2 row-span-1", "~/site/projects") }}
+  <!-- Projets récents en bas, prend toute la largeur -->
+  {{ win.terminal_window("Projets récents", recent_projects_content, "col-span-2 min-h-[200px]", "~/site/projects") }}
+
+</main>
