@@ -25,11 +25,11 @@
     <div id="appMenu" class="hidden absolute top-10 left-0 bg-gray-900/95 border border-gray-700 rounded-md p-3 w-56 font-mono text-sm text-gray-200 shadow-lg">
       <pre class="whitespace-pre leading-tight select-none">
   <span class="text-green-400 transition-all duration-200 ease-in-out transform scale-95">~/site</span>
-  ├── <a href="/" class="text-blue-400 hover:underline">about</a>
-  ├── <a href="/research/" class="text-blue-400 hover:underline">research</a>
-  ├── <a href="/teaching/" class="text-blue-400 hover:underline">teaching</a>
-  ├── <a href="/recent_projects/" class="text-blue-400 hover:underline">projects</a>
-  └── <a href="/publications/" class="text-blue-400 hover:underline">publications</a>
+  ├── <a href="{{ '/' | url }}" class="text-blue-400 hover:underline">about</a>
+  ├── <a href="{{ '/research' | url }}" class="text-blue-400 hover:underline">research</a>
+  ├── <a href="{{ '/teaching' | url }}" class="text-blue-400 hover:underline">teaching</a>
+  ├── <a href="{{ '/recent_projects' | url }}" class="text-blue-400 hover:underline">projects</a>
+  └── <a href="{{ '/publications' | url }}" class="text-blue-400 hover:underline">publications</a>
       </pre>
     </div>
   </div>
