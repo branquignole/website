@@ -1,0 +1,16 @@
+---
+layout: layouts/default.njk
+---
+
+{% import "partials/terminal_window.njk" as win %}
+
+<div class="flex justify-center items-center min-h-screen p-6">
+{{ win.terminal_window(
+    title=title or page.fileSlug | capitalize,
+    content=content,
+    classes="max-w-4xl w-full",
+    path="~/site/" ~ page.fileSlug
+) }}
+
+
+</div>

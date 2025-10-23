@@ -1,6 +1,6 @@
 ---
 title: "Projets récents"
-layout: layouts/default.njk
+layout: layouts/terminal_page.njk
 ---
 
 user@linux:~/projects$ ls

@@ -46,6 +46,10 @@ export default function (eleventyConfig) {
         return collectionApi.getFilteredByGlob("src/srd/projects/*.md");
     });
 
+    eleventyConfig.addShortcode("currentYear", () => {
+        return new Date().getFullYear();
+    });
+
 
     return {
     dir: { input: 'src', output: 'dist' },

@@ -1,5 +1,6 @@
 ---
 title : Research
+layout: layouts/terminal_page.njk
 ---
 
 # Topics

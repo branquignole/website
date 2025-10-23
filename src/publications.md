@@ -1,5 +1,6 @@
 ---
 title: Publications
+layout: layouts/terminal_page.njk
 ---
 
 # Publications
