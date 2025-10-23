@@ -43,7 +43,7 @@ export default function (eleventyConfig) {
     );
 
     eleventyConfig.addCollection("projects", function(collectionApi) {
-        return collectionApi.getFilteredByGlob("src/srd/projects/*.md");
+        return collectionApi.getFilteredByGlob("src/projects/*.md");
     });
 
     eleventyConfig.addShortcode("currentYear", () => {

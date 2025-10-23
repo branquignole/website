@@ -1,5 +1,5 @@
 {% macro terminal_window(title, content, classes="", path="~/site") %}
-<div class="terminal-window {{ classes }} flex flex-col rounded-lg shadow-lg overflow-visible border border-gray-700">
+<div class="terminal-window {{ classes }} flex flex-col rounded-lg shadow-lg overflow-visible border border-gray-700 hover:bg-gray-800/70 hover:shadow-xl transition-colors duration-300">
   <div class="terminal-bar flex items-center justify-between px-3 py-1 bg-gray-800">
     <span class="title text-sm font-semibold text-gray-100">{{ title }}</span>
     <div class="buttons flex gap-1">

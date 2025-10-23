@@ -1,5 +1,5 @@
 ---
-title: "Terminal Layout"
+title: "Johanne Vincent's personnal page"
 layout: layouts/default.njk
 ---
 
@@ -35,10 +35,10 @@ layout: layouts/default.njk
   {% set recent_projects_content = "" %}
 {% endif %}
 
-<main class="grid grid-cols-1 md:grid-cols-2 auto-rows-auto gap-2 w-screen min-h-screen p-2">
+<main class="grid grid-cols-1 md:grid-cols-3 gap-2 w-screen min-h-screen p-2">
 
   <!-- About à gauche (grand) -->
-  {{ win.terminal_window("About", about_content, "md:row-span-3 min-h-[200px]", "~/site/about") }}
+  {{ win.terminal_window("About", about_content, "md:col-span-2 md:row-span-3 min-h-[200px]", "~/site/about") }}
 
   <!-- Research en haut à droite -->
   {{ win.terminal_window("Research", research_content, "min-h-[150px]", "~/site/research") }}
@@ -46,11 +46,12 @@ layout: layouts/default.njk
   <!-- Teaching en dessous de Research -->
   {{ win.terminal_window("Teaching", teaching_content, "min-h-[150px]", "~/site/teaching") }}
 
-
   <!-- Projets récents en dessous de Teaching -->
   {{ win.terminal_window("Projets récents", recent_projects_content, "min-h-[150px]", "~/site/projects") }}
 
   <!-- Publications en bas, prend toute la largeur -->
-  {{ win.terminal_window("Publications", publications_content, "col-span-2 min-h-[200px]", "~/site/publications") }}
+  {{ win.terminal_window("Publications", publications_content, "md:col-span-3 min-h-[200px]", "~/site/publications") }}
 
 </main>
+
+
