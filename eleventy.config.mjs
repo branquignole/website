@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/postcss';
 export default function (eleventyConfig) {
   eleventyConfig.on('eleventy.before', async () => {
     const tailwindInputPath = path.resolve('./src/styles/index.css');
-    const tailwindOutputPath = './dist/styles/index.css';
+    const tailwindOutputPath = './docs/styles/index.css';
     const cssContent = fs.readFileSync(tailwindInputPath, 'utf8');
     const outputDir = path.dirname(tailwindOutputPath);
 
@@ -52,7 +52,7 @@ export default function (eleventyConfig) {
 
 
     return {
-    dir: { input: 'src', output: 'dist' },
+    dir: { input: 'src', output: 'docs' },
       templateFormats: ["njk", "md"],  // <- s'assurer que njk est bien supporté
       htmlTemplateEngine: "njk",
       markdownTemplateEngine: "njk"
