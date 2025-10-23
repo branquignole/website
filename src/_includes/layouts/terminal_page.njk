@@ -4,7 +4,7 @@ layout: layouts/default.njk
 
 {% import "partials/terminal_window.njk" as win %}
 
-<div class="flex justify-center items-center min-h-screen p-6">
+<div class="flex flex-col w-full h-auto min-h-[150px] md:min-h-[200px]">
 {{ win.terminal_window(
     title=title or page.fileSlug | capitalize,
     content=content,
