@@ -10,7 +10,7 @@ layout: layouts/default.njk
   <!-- Avatar DaisyUI -->
   <div class="avatar p-4">
     <div class="w-40 rounded-full ring ring-gray-700 ring-offset-base-100 ring-offset-2">
-      <img src="/assets/id.jpg" alt="Profile"/>
+      <img src="{{ '/assets/id.jpg' | url }}" alt="Profile"/>
     </div>
   </div>
 
@@ -18,7 +18,7 @@ layout: layouts/default.njk
 <div class="text-gray-200 font-mono space-y-1">
   <div><span class="text-cyan-300 font-bold">Name:</span> Johanne Vincent</div>
   <div><span class="text-cyan-300 font-bold">Email:</span> johanne.vincent@imt-atlantique.fr</div>
-  <div><span class="text-cyan-300 font-bold">Website:</span> <a href="https://example.com" class="text-violet-400 underline">example.com</a></div>
+  <div><span class="text-cyan-300 font-bold">Website:</span> <a href="https://branquignole.github.io/website/" class="text-violet-400 underline">https://branquignole.github.io/website/</a></div>
   <div><span class="text-cyan-300 font-bold">ORCID:</span> <a href="https://orcid.org/0000-0002-4021-3495" class="text-violet-400 underline">0000-0002-4021-3495</a></div>
   <div><span class="text-cyan-300 font-bold">GitHub:</span> <a href="https://github.com/branquignole" class="text-violet-400 underline">Johanne Vincent</a></div>
   <div><span class="text-cyan-300 font-bold">Bsky:</span> <a href="https://bsky.app/profile/branquignole.bsky.social" class="text-violet-400 underline">@branquignole.bsky.social</a></div>
