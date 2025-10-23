@@ -772,11 +772,11 @@
   .w-full {
     width: 100%;
   }
-  .w-screen {
-    width: 100vw;
-  }
   .max-w-4xl {
     max-width: var(--container-4xl);
+  }
+  .max-w-screen {
+    max-width: 100vw;
   }
   .flex-1 {
     flex: 1;
@@ -841,6 +841,9 @@
   }
   .overflow-visible {
     overflow: visible;
+  }
+  .overflow-x-hidden {
+    overflow-x: hidden;
   }
   .rounded {
     border-radius: 0.25rem;
