@@ -55,7 +55,8 @@ export default function (eleventyConfig) {
     dir: { input: 'src', output: 'docs' },
       templateFormats: ["njk", "md"],  // <- s'assurer que njk est bien supporté
       htmlTemplateEngine: "njk",
-      markdownTemplateEngine: "njk"
+      markdownTemplateEngine: "njk",
+      pathPrefix: "/website/",
   };
 
 }
