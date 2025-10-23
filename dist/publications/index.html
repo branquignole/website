@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Publications</title>
+  <link rel="stylesheet" href="/styles/index.css">
+</head>
+<body class="text-gray-200 font-sans">
+
+  <!-- Background image -->
+  <div class="fixed inset-0 -z-10 bg-cover bg-center" style="background-image: url('/assets/background.png'); z-index: -10;"></div>
+
+  <!-- Taskbar style Linux -->
+  <div class="fixed top-0 left-0 w-full h-10 bg-gray-800 backdrop-blur-sm z-20 flex items-center justify-between px-4">
+
+  <!-- Left: menu / logo -->
+  <div class="relative flex items-center gap-2">
+    <!-- Bouton -->
+    <button id="appMenuBtn" class="hover:bg-gray-700/60 p-1 rounded flex items-center gap-1">
+     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"> <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" /> </svg>
+      <span class="font-mono text-gray-300 text-sm">Menu</span>
+    </button>
+
+    <!-- Menu déroulant -->
+    <div id="appMenu" class="hidden absolute top-10 left-0 bg-gray-900/95 border border-gray-700 rounded-md p-3 w-56 font-mono text-sm text-gray-200 shadow-lg">
+      <pre class="whitespace-pre leading-tight select-none">
+  <span class="text-green-400 transition-all duration-200 ease-in-out transform scale-95">~/site</span>
+  ├── <a href="/" class="text-blue-400 hover:underline">about</a>
+  ├── <a href="/research/" class="text-blue-400 hover:underline">research</a>
+  ├── <a href="/teaching/" class="text-blue-400 hover:underline">teaching</a>
+  ├── <a href="/recent_projects/" class="text-blue-400 hover:underline">projects</a>
+  └── <a href="/publications/" class="text-blue-400 hover:underline">publications</a>
+      </pre>
+    </div>
+  </div>
+
+  <script>
+    // Toggle du menu
+    const btn = document.getElementById('appMenuBtn');
+    const menu = document.getElementById('appMenu');
+    document.addEventListener('click', (e) => {
+      if (btn.contains(e.target)) {
+        menu.classList.toggle('hidden');
+      } else if (!menu.contains(e.target)) {
+        menu.classList.add('hidden');
+      }
+    });
+  </script>
+
+
+    <!-- Center: user@host -->
+    <div class="text-sm font-mono text-gray-100">
+      johanne@research:~/site
+    </div>
+
+    <!-- Right: status icons + clock -->
+      <div class="flex items-center gap-3 text-sm font-mono text-gray-100 tabular-nums">
+        <div class="flex items-center gap-1 text-gray-400 text-xs">
+          <span>📶</span>
+          <span>🔋</span>
+        </div>
+        <span id="taskbar-clock">--:--</span>
+      </div>
+
+
+  </div>
+
+  <!-- Main content -->
+  <main class="pt-10">
+    
+
+
+<div class="flex justify-center items-center min-h-screen p-6">
+
+<div class="terminal-window max-w-4xl w-full flex flex-col rounded-lg shadow-lg overflow-visible border border-gray-700 hover:bg-gray-800/70 hover:shadow-xl transition-colors duration-300">
+  <div class="terminal-bar flex items-center justify-between px-3 py-1 bg-gray-800">
+    <span class="title text-sm font-semibold text-gray-100">Publications</span>
+    <div class="buttons flex gap-1">
+      <span class="w-3 h-3 bg-red-500 rounded-full"></span>
+      <span class="w-3 h-3 bg-yellow-400 rounded-full"></span>
+      <span class="w-3 h-3 bg-green-500 rounded-full"></span>
+    </div>
+  </div>
+
+  <div class="terminal-content p-3 text-sm bg-black/40 backdrop-blur-sm text-gray-100 flex-1 font-mono overflow-visible">
+    <div class="terminal-prompt flex flex-wrap items-center gap-1 mb-1">
+      <span class="text-cyan-400 font-semibold">user</span>
+      <span class="text-gray-400">@</span>
+      <span class="text-green-400 font-semibold">linux</span>
+      <span class="text-gray-400">in</span>
+      <span class="text-yellow-400 font-semibold">~/site/publications</span>
+      <span class="text-gray-400">on</span>
+      <span class="text-purple-400 font-semibold">🌿 main</span>
+      <span class="text-gray-500">❯</span>
+      <span class="text-green-400 font-bold">➜</span>
+    </div>
+    <h1>Publications</h1>
+<div class="font-mono text-sm space-y-1 p-2">
+  <div>
+    <span class="text-green-400">📄</span>
+    <a href="https://imt-mines-ales.hal.science/hal-04779322v1" class="text-white hover:underline">Analysis of digital twin and its physical object: Exploring the efficiency and accuracy of datasets for real-world application</a>
+    <span class="text-gray-400"> [Data Science and Management] (2024)</span>
+    <span class="text-yellow-300"> - Henry Chima Ukwuoma, Gilles Dusserre, Gouenou Coatrieux, Johanne Vincent</span>
+    <span class="text-blue-400"></span>
+  </div>
+  <div>
+    <span class="text-green-400">📁</span>
+    <a href="https://hal.science/hal-04800387v1" class="text-white hover:underline">Analyzing encrypted traffic using AI models</a>
+    <span class="text-gray-400"> (2024)</span>
+    <span class="text-yellow-300"> - Louis Poidevin, Francoise Sailhan, Johanne Vincent</span>
+    <span class="text-blue-400"></span>
+  </div>
+  <div>
+    <span class="text-green-400">📁</span>
+    <a href="https://imt-mines-ales.hal.science/hal-05318045v1" class="text-white hover:underline">Bridging digital and physical realms: cross-evaluating intrusion detection models in cyber-physical systems</a>
+    <span class="text-gray-400"> (2024)</span>
+    <span class="text-yellow-300"> - Henry Chima Ukwuoma, Gilles Dusserre, Gouenou Coatrieux, Johanne Vincent, Nasir Baba-Ahmed, Stéphane Lecoeuche, Emmanuel Song Shombot</span>
+    <span class="text-blue-400"></span>
+  </div>
+  <div>
+    <span class="text-green-400">📁</span>
+    <a href="https://imt-mines-ales.hal.science/hal-04931047v1" class="text-white hover:underline">Optimising Intrusion Detection in Cyber-Physical Systems</a>
+    <span class="text-gray-400"> (2024)</span>
+    <span class="text-yellow-300"> - Henry Chima Ukwuoma, Gilles Dusserre, Gouenou Coatrieux, Johanne Vincent, Nasir-Baba Ahmed</span>
+    <span class="text-blue-400"></span>
+  </div>
+  <div>
+    <span class="text-green-400">📁</span>
+    <a href="https://imt-mines-ales.hal.science/hal-04208528v1" class="text-white hover:underline">Digital Twin Based Anomaly Detection foran Improved Cyber Security in a Water Distribution System</a>
+    <span class="text-gray-400"> (2023)</span>
+    <span class="text-yellow-300"> - Henry Chima Ukwuoma, Gilles Dusserre, Gouenou Coatrieux, Johanne Vincent</span>
+    <span class="text-blue-400"></span>
+  </div>
+  <div>
+    <span class="text-green-400">📁</span>
+    <a href="https://imt-mines-ales.hal.science/hal-04097871v1" class="text-white hover:underline">Digital Twin and Intrusion Detection in a Cyber Physical System</a>
+    <span class="text-gray-400"> (2023)</span>
+    <span class="text-yellow-300"> - Henry Chima Ukwuoma, Gilles Dusserre, Gouenou Coatrieux, Johanne Vincent</span>
+    <span class="text-blue-400"></span>
+  </div>
+  <div>
+    <span class="text-green-400">📁</span>
+    <a href="https://imt-mines-ales.hal.science/hal-04316078v1" class="text-white hover:underline">Digital Twin And Intrusion Detection In A Water Distribution System</a>
+    <span class="text-gray-400"> (2023)</span>
+    <span class="text-yellow-300"> - Henry Chima Ukwuoma, Gilles Dusserre, Gouenou Coatrieux, Johanne Vincent</span>
+    <span class="text-blue-400"></span>
+  </div>
+  <div>
+    <span class="text-green-400">📄</span>
+    <a href="https://hal.science/hal-02953309v1" class="text-white hover:underline">Information System Services Generation of Business Services Specification and Based on a System-of-Services Logical Architecture Pattern</a>
+    <span class="text-gray-400"> [International Journal of Cooperative Information Systems] (2020)</span>
+    <span class="text-yellow-300"> - Jacques Simonin, Pierre-Yves Pillain, Didier Gueriot, Johanne Vincent</span>
+    <span class="text-blue-400"></span>
+  </div>
+  <div>
+    <span class="text-green-400">📁</span>
+    <a href="https://hal.science/hal-02075655v1" class="text-white hover:underline">Privacy Protection and Security in eHealth Cloud Platform for Medical Image Sharing</a>
+    <span class="text-gray-400"> (2016)</span>
+    <span class="text-yellow-300"> - Johanne Vincent, Wei Pan, Gouenou Coatrieux</span>
+    <span class="text-blue-400"></span>
+  </div>
+  <div>
+    <span class="text-green-400">📁</span>
+    <a href="https://theses.hal.science/tel-01007682v1" class="text-white hover:underline">Identité numérique en contexte Télécom,Digital Identity for a Telecom Operator</a>
+    <span class="text-gray-400"> (2013)</span>
+    <span class="text-yellow-300"> - Johanne Vincent</span>
+    <span class="text-blue-400"></span>
+  </div>
+  <div>
+    <span class="text-green-400">📁</span>
+    <a href="https://hal.science/hal-01077224v1" class="text-white hover:underline">Système de gestion d’identité numérique,System for managing digital identity</a>
+    <span class="text-gray-400"> (2013)</span>
+    <span class="text-yellow-300"> - Kurosh Teimoorzadeh, Johanne Vincent, Jean-Philippe Wary, Jean-Claude Paillès, Christophe Rosenberger</span>
+    <span class="text-blue-400"></span>
+  </div>
+  <div>
+    <span class="text-green-400">📁</span>
+    <a href="https://hal.science/hal-01004214v1" class="text-white hover:underline">The OFFPAD : Requirements and Usage</a>
+    <span class="text-gray-400"> (2013)</span>
+    <span class="text-yellow-300"> - Kent Varmedal, Henning Klevger, Joakim Hovlandsvag, Andun Josang, Johanne Vincent, Laurent Miralabé</span>
+    <span class="text-blue-400"></span>
+  </div>
+  <div>
+    <span class="text-green-400">📁</span>
+    <a href="https://hal.science/hal-00811858v1" class="text-white hover:underline">Protection de la vie privée basée sur des ontologies dans un système Android</a>
+    <span class="text-gray-400"> (2012)</span>
+    <span class="text-yellow-300"> - Johanne Vincent, Tom Dubin, Christine Porquet</span>
+    <span class="text-blue-400"></span>
+  </div>
+  <div>
+    <span class="text-green-400">📁</span>
+    <a href="https://hal.science/hal-01006524v1" class="text-white hover:underline">A Mobile Payment Evaluation Based on a Digital Identity Representation</a>
+    <span class="text-gray-400"> (2012)</span>
+    <span class="text-yellow-300"> - Johanne Vincent, Vincent Alimi, Aude Plateaux, Chrystel Gaber, Marc Pasquet</span>
+    <span class="text-blue-400"></span>
+  </div>
+  <div>
+    <span class="text-green-400">📁</span>
+    <a href="https://hal.science/hal-01001854v1" class="text-white hover:underline">Analyse de la sécurité et de la protection de la vie privée des systèmes de gestion d&#39;identités</a>
+    <span class="text-gray-400"> (2012)</span>
+    <span class="text-yellow-300"> - Johanne Vincent, Kurosh Teimoorzadeh, Christophe Rosenberger, Marc Pasquet</span>
+    <span class="text-blue-400"></span>
+  </div>
+  <div>
+    <span class="text-green-400">📁</span>
+    <a href="https://hal.science/hal-00801738v1" class="text-white hover:underline">Privacy Protection for Smartphones: An Ontology-Based Firewall</a>
+    <span class="text-gray-400"> (2011)</span>
+    <span class="text-yellow-300"> - Johanne Vincent, Christine Porquet, Maroua Borsali, Harold Leboulanger</span>
+    <span class="text-blue-400"></span>
+  </div>
+  <div>
+    <span class="text-green-400">📁</span>
+    <a href="https://hal.science/hal-00808897v1" class="text-white hover:underline">Ontology-based privacy protection for smartphone: A firewall implementation</a>
+    <span class="text-gray-400"> (2011)</span>
+    <span class="text-yellow-300"> - Johanne Vincent, Christine Porquet, Idriss Oulmakhzoune</span>
+    <span class="text-blue-400"></span>
+  </div>
+  <div>
+    <span class="text-green-400">📁</span>
+    <a href="https://hal.science/hal-01004330v1" class="text-white hover:underline">Security and privacy analysis of a physical access control solution</a>
+    <span class="text-gray-400"> (2011)</span>
+    <span class="text-yellow-300"> - Johanne Vincent, Marc Pasquet, W. Chaisantikulwat</span>
+    <span class="text-blue-400"></span>
+  </div>
+  <div>
+    <span class="text-green-400">📁</span>
+    <a href="https://hal.science/hal-01004262v1" class="text-white hover:underline">Cartography of actors and roles in identity management solutions</a>
+    <span class="text-gray-400"> (2010)</span>
+    <span class="text-yellow-300"> - Johanne Vincent, Jean-Philippe Wary, Marc Pasquet</span>
+    <span class="text-blue-400"></span>
+  </div>
+  <div>
+    <span class="text-green-400">📁</span>
+    <a href="https://hal.science/hal-01003462v1" class="text-white hover:underline">A privacy-enhanced m-transactions architecture for awareness and trust</a>
+    <span class="text-gray-400"> (2010)</span>
+    <span class="text-yellow-300"> - Jean-Claude Paillès, Johanne Vincent</span>
+    <span class="text-blue-400"></span>
+  </div>
+  <div>
+    <span class="text-green-400">📁</span>
+    <a href="https://hal.science/hal-00461016v1" class="text-white hover:underline">Evolutionary computation approaches for shape modelling and fitting</a>
+    <span class="text-gray-400"> (2005)</span>
+    <span class="text-yellow-300"> - Sara Silva, Pierre-Alain Fayolle, Johanne Vincent, Guillaume Pauron, Christophe Rosenberger, Christian Toinard</span>
+    <span class="text-blue-400"></span>
+  </div>
+</div>
+  </div>
+</div>
+
+
+
+</div>
+
+  </main>
+
+  <!-- Clock script -->
+  <script>
+    const clockEl = document.getElementById('taskbar-clock');
+    function updateClock() {
+      const now = new Date();
+      const h = now.getHours().toString().padStart(2,'0');
+      const m = now.getMinutes().toString().padStart(2,'0');
+      clockEl.textContent = `${h}:${m}`;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script>
+    <footer class="sticky bottom-0 w-full py-2 bg-gray-800/50 backdrop-blur-sm text-gray-400 text-xs font-mono flex justify-center items-center gap-4 border-t border-gray-700">
+  <span>© 2025 Johanne — Theme Available Here</span>
+  <a href="https://github.com/tonusername" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1 text-blue-400 hover:underline">
+    <!-- Icône GitHub -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.438 9.8 8.207 11.387.6.113.793-.262.793-.583 0-.287-.012-1.243-.018-2.254-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.082-.73.082-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.76-1.605-2.665-.303-5.467-1.334-5.467-5.933 0-1.31.468-2.382 1.236-3.22-.124-.304-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.45 11.45 0 0 1 3-.404c1.02.005 2.046.137 3 .404 2.29-1.552 3.296-1.23 3.296-1.23.655 1.653.243 2.872.12 3.176.77.838 1.235 1.91 1.235 3.22 0 4.61-2.807 5.625-5.48 5.922.43.37.814 1.102.814 2.222 0 1.606-.014 2.898-.014 3.293 0 .324.19.701.8.582C20.565 22.3 24 17.8 24 12.5 24 5.87 18.63.5 12 .5z"/>
+    </svg>
+    GitHub
+  </a>
+</footer>
+
+</body>
+</html>
