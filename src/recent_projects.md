@@ -1,5 +1,5 @@
 ---
-title: "Projets récents"
+title: "Current research projects"
 layout: layouts/terminal_page.njk
 ---
 
