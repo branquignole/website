@@ -14,6 +14,6 @@ _2024 -- ongoing_ : **Louis Poidevin** "Towards a new generation of probes for m
 
 _2022 -- ongoing_ : **Anne Gaëlle Calandre** "Authentication and control of inter-domains with guaranteed privacy in 5G networks." **Ph.D.**
 
-_2022 -- ongoing_ : **Qiyang Li** "Ensuring privacy protection of people with disabilities when outsourcing data in IoT systems for ambient assisted living." **Ph.D.**
+_2022 -- 2025_ : **Qiyang Li** "Ensuring privacy protection of people with disabilities when outsourcing data in IoT systems for ambient assisted living." **Ph.D.**
 
 _2022 -- 2025_ : **Henry Chima Ukwuoma** Intrusion detection in cyber physical systems for enhanced cybersecurity of hospitals : a study of water management system. **Ph.D. Defended**
