@@ -34,7 +34,7 @@ layout: layouts/default.njk
 # Working Experience
 
 _Jul, 2015 -- ongoing_ : **Assistant professor @ IMT Atlantique, FR** in the Computer Science Department. Major research areas includes cybersecurity and privacy
-protection. Member of the «sécurIté et Résilience des Systèmes d’Information» (IRIS) team at the CNRS Lab-STICC, UMR 6285.
+protection. Member of the «MAnagement and cybersecurity of Distributed, NEtworked and intelligent Systems at Scale» (MADNESS) team at the CNRS Lab-STICC, UMR 6285.
 
 _Aug, 2014 -- Jun, 2015 :_ **Research Engineer @ SWID, FR,** R&D project manager on the DGA RAPID FRAG&TAG. Research and development activities around digital identity and the Internet of Things.
 
