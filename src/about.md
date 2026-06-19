@@ -61,5 +61,5 @@ _2001_ : **French Baccalauréat** Charles de Gaulle Highschool, FR Option: Scien
 <br>
 <br>
 
-&gt; Download full CV here -> [cvJohanne2025.pdf](_data/cvJohanne2025.pdf)
+&gt; Download full CV here -> [cvJohanne2025.pdf](assets/cvJohanne2025.pdf)
 
