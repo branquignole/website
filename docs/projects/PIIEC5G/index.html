@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PIIEC 5G Project</title>
+  <link rel="stylesheet" href="/website/styles/index.css">
+  <meta name="description" content="Personal research webpage of Johanne Vincent, Assistant Professor in Computer Science at IMT Atlantique. Explore recent publications, teaching materials, and research interests.">
+
+  <!-- Keywords for Academic and Search Indexing -->
+  <meta name="keywords" content="Johanne Vincent, IMT Atlantique, Assistant Professor, Computer Science, Research, Faculty, Computer Science Professor, Brittany, France">
+
+  <!-- Canonical Tag (Tells Google this is the primary, official link) -->
+  <link rel="canonical" href="https://branquignole.github.io/website/" />
+
+  <!-- Open Graph Tags (Makes your link look professional when shared on LinkedIn or X) -->
+  <meta property="og:title" content="Johanne Vincent | Assistant Professor in Computer Science at IMT Atlantique">
+  <meta property="og:description" content="Research, publications, and teaching profile of Johanne Vincent at IMT Atlantique.">
+  <meta property="og:url" content="https://branquignole.github.io/website/">
+  <meta property="og:type" content="profile">
+</head>
+<body class="text-gray-200 font-sans">
+
+  <!-- Background image -->
+  <div class="fixed inset-0 -z-10 bg-cover bg-center" style="background-image: url('/website/assets/background.png'); z-index: -10;"></div>
+
+  <!-- Taskbar style Linux -->
+  <div class="fixed top-0 left-0 w-full h-10 bg-gray-800 backdrop-blur-sm z-20 flex items-center justify-between px-4">
+
+  <!-- Left: menu / logo -->
+  <div class="relative flex items-center gap-2">
+    <!-- Bouton -->
+    <button id="appMenuBtn" class="hover:bg-gray-700/60 p-1 rounded flex items-center gap-1">
+     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"> <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" /> </svg>
+      <span class="font-mono text-gray-300 text-sm">Menu</span>
+    </button>
+
+    <!-- Menu déroulant -->
+    <div id="appMenu" class="hidden absolute top-10 left-0 bg-gray-900/95 border border-gray-700 rounded-md p-3 w-56 font-mono text-sm text-gray-200 shadow-lg">
+      <pre class="whitespace-pre leading-tight select-none">
+  <span class="text-green-400 transition-all duration-200 ease-in-out transform scale-95">~/site</span>
+  ├── <a href="/website/" class="text-blue-400 hover:underline">about</a>
+  ├── <a href="/website/research" class="text-blue-400 hover:underline">research</a>
+  ├── <a href="/website/teaching" class="text-blue-400 hover:underline">teaching</a>
+  ├── <a href="/website/recent_projects" class="text-blue-400 hover:underline">projects</a>
+  └── <a href="/website/publications" class="text-blue-400 hover:underline">publications</a>
+      </pre>
+    </div>
+  </div>
+
+  <script>
+    // Toggle du menu
+    const btn = document.getElementById('appMenuBtn');
+    const menu = document.getElementById('appMenu');
+    document.addEventListener('click', (e) => {
+      if (btn.contains(e.target)) {
+        menu.classList.toggle('hidden');
+      } else if (!menu.contains(e.target)) {
+        menu.classList.add('hidden');
+      }
+    });
+  </script>
+
+
+    <!-- Center: user@host -->
+    <div class="text-sm font-mono text-gray-100">
+      johanne@research:~/site
+    </div>
+
+    <!-- Right: status icons + clock -->
+      <div class="flex items-center gap-3 text-sm font-mono text-gray-100 tabular-nums">
+        <div class="flex items-center gap-1 text-gray-400 text-xs">
+          <span>📶</span>
+          <span>🔋</span>
+        </div>
+        <span id="taskbar-clock">--:--</span>
+      </div>
+
+
+  </div>
+
+  <!-- Main content -->
+  <main class="pt-10">
+    
+
+
+<div class="flex flex-col w-full h-auto min-h-[150px] md:min-h-[200px]">
+
+<div class="terminal-window max-w-4xl w-full flex flex-col rounded-lg shadow-lg overflow-visible border border-gray-700 hover:bg-gray-800/70 hover:shadow-xl transition-colors duration-300">
+  <div class="terminal-bar flex items-center justify-between px-3 py-1 bg-gray-800">
+    <span class="title text-sm font-semibold text-gray-100">PIIEC 5G Project</span>
+    <div class="buttons flex gap-1">
+      <span class="w-3 h-3 bg-red-500 rounded-full"></span>
+      <span class="w-3 h-3 bg-yellow-400 rounded-full"></span>
+      <span class="w-3 h-3 bg-green-500 rounded-full"></span>
+    </div>
+  </div>
+
+  <div class="terminal-content p-3 text-sm bg-black/40 backdrop-blur-sm text-gray-100 flex-1 font-mono overflow-visible">
+    <div class="terminal-prompt flex flex-wrap items-center gap-1 mb-1">
+      <span class="text-cyan-400 font-semibold">user</span>
+      <span class="text-gray-400">@</span>
+      <span class="text-green-400 font-semibold">linux</span>
+      <span class="text-gray-400">in</span>
+      <span class="text-yellow-400 font-semibold">~/site/PIIEC5G</span>
+      <span class="text-gray-400">on</span>
+      <span class="text-purple-400 font-semibold">🌿 main</span>
+      <span class="text-gray-500">❯</span>
+      <span class="text-green-400 font-bold">➜</span>
+    </div>
+    <h1>PIIEC 5G</h1>
+<p>The European PIIEC ME/CT project (Project of Common European Interest in Microelectronics and Information Technology) aims to pave the way for the 5G of tomorrow—with faster, smarter, and more open networks—by enabling various stakeholders (companies, researchers, universities) to work together to develop new telecommunications technologies. The main objective of the French branch of the project is to create an IT platform, based on the Sylva software stack, that enables the testing, automation, and integration of innovations for the virtualized and modular networks of the future.</p>
+
+  </div>
+</div>
+
+
+
+</div>
+
+  </main>
+
+  <!-- Clock script -->
+  <script>
+    const clockEl = document.getElementById('taskbar-clock');
+    function updateClock() {
+      const now = new Date();
+      const h = now.getHours().toString().padStart(2,'0');
+      const m = now.getMinutes().toString().padStart(2,'0');
+      clockEl.textContent = `${h}:${m}`;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script>
+    <footer class="sticky bottom-0 w-full py-2 bg-gray-800/50 backdrop-blur-sm text-gray-400 text-xs font-mono flex justify-center items-center gap-4 border-t border-gray-700">
+  <span>© 2026 Johanne — Theme Available Here</span>
+  <a href="https://github.com/branquignole" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1 text-blue-400 hover:underline">
+    <!-- Icône GitHub -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.438 9.8 8.207 11.387.6.113.793-.262.793-.583 0-.287-.012-1.243-.018-2.254-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.082-.73.082-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.76-1.605-2.665-.303-5.467-1.334-5.467-5.933 0-1.31.468-2.382 1.236-3.22-.124-.304-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.45 11.45 0 0 1 3-.404c1.02.005 2.046.137 3 .404 2.29-1.552 3.296-1.23 3.296-1.23.655 1.653.243 2.872.12 3.176.77.838 1.235 1.91 1.235 3.22 0 4.61-2.807 5.625-5.48 5.922.43.37.814 1.102.814 2.222 0 1.606-.014 2.898-.014 3.293 0 .324.19.701.8.582C20.565 22.3 24 17.8 24 12.5 24 5.87 18.63.5 12 .5z"/>
+    </svg>
+    GitHub
+  </a>
+</footer>
+
+</body>
+</html>
